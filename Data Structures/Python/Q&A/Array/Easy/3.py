@@ -1,5 +1,6 @@
 # How do you find the largest and smallest number in an unsorted integer array?
 
+from array import *
 arr = [2, 4, 5, 7, 9, 24, 6, 34]
 
 
@@ -15,7 +16,6 @@ obj = minimum(arr)
 print(obj)
 
 print('\n')
-
 
 
 # Q 3.1 Write a python program to append the element on index 1
@@ -43,8 +43,12 @@ print(adding(a, indx, value))
 
 # Q 3.2 Write a python program to convert an array to an array of machine values and return the bytes representation
 
-s = ['a', 'b', 'c', 'd', 'e', 'f']
 
-str(s)
+from array import *
+print("Bytes to String: ")
+x =  array('i',[])
 
-print(s)
+for i in range(1, 122):
+    x.append(i)
+    s = x.tobytes()
+print(f"{x}")
