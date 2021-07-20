@@ -1,12 +1,13 @@
 # Q2 How do you find the duplicate number on a given integer array?
 
 
-arr = [1,2,3,4,5,5,6,3,7,9]
+from array import *
+arr = [1, 2, 3, 4, 5, 5, 6, 3, 7, 9]
 
-for i in range (0, len(arr)) :
-    for j in range (i+1, len(arr)):
+for i in range(0, len(arr)):
+    for j in range(i+1, len(arr)):
         if arr[i] == arr[j]:
-            print (arr[j])
+            print(arr[j])
 
 
 print('\n')
@@ -74,12 +75,12 @@ print('\n')
 
 # Q2.5 Write a python program to get the current memory address and the length in elements of the buffer used to hold an array's contents and also fond the size of the memory buffer in bytes
 
-from array import *
 
-ara = array('i',[1, 3, 5, 7, 9, 34, 1, 3, 5, 7, 9, 34])
+ara = array('i', [1, 3, 5, 7, 9, 34, 1, 3, 5, 7, 9, 34])
 
 print(str(ara.buffer_info()))
 
-print('size of the memory buffer in bytes ', str(ara.buffer_info()[1] * ara.itemsize))
+print('size of the memory buffer in bytes ',
+      str(ara.buffer_info()[1] * ara.itemsize))
 
 print('\n')
