@@ -1,1 +1,0 @@
-# How to find a median of two sorts arrays?

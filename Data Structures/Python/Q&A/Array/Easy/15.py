@@ -1,1 +1,0 @@
-# How do you perform a binary search in a given array?
